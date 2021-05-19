@@ -10,6 +10,7 @@ itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
 pycparser==2.20
+python-dotenv==0.17.1
 SpeechRecognition==3.8.1
 SQLAlchemy==1.4.15
 typing-extensions==3.10.0.0

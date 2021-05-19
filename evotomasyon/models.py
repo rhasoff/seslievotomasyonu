@@ -22,12 +22,5 @@ class Service(db.Model):
         else:
             self.state=True
     
-    
-    # def get_status(self):
-    #     status =""
-    #     if self.state:
-    #         status="Açık"
-    #     else:
-    #         status="Kapalı"
-    #     return f"{self.service_name} {status}"
+
 
