@@ -20,6 +20,10 @@ Windows:
 ### 5 Veritabanını kur (veya sıfırla):
 `python3 resetdb.py`
 
-### 6 Çalıştır:
-`python3 run.py`
+### 6 Flac okuyucu yükle:
+`sudo apt-get install flac`
+
+
+### 7 Çalıştır:
+`flask run --cert=adhoc`
 
