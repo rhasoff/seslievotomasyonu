@@ -1,0 +1,30 @@
+
+<div class="service-container card m-1 col-sm-4">
+  <input type="hidden" class="service-info" name="service_id" value="{{ service.id }}">
+  <input type="hidden" class="service-info" name="service_name" value="{{ service.service_name }}">
+  <input type="hidden" class="service-info" name="service_state" value="{{ service.state }}">
+  <input type="hidden" class="service-info" name="service_iconon" value="{{ service.icon_on }}">
+  <input type="hidden" class="service-info" name="service_iconoff" value="{{ service.icon_off }}">
+    <div class="card-body">
+    {% if service.state %}
+    <div class="card-header">
+      <div class="card-img-top">
+        <h5 class="card-title text-primary">{{service.icon_on |safe}} {{service.service_name}}</h5>
+      </div>
+    </div>
+    <p class="card-text">{{ service.service_name }} Açık!</p>
+    <!-- <a href="{{ url_for('change_service_state', service_id=service.id) }}" class="btn-service-enable btn btn-danger d-grid gap-2"> Kapat </a> -->
+    <a href="#" class="btn-service btn btn-danger d-grid gap-2"> Kapat </a>
+    {% else %}
+    <div class="card-header">
+    <div class="card-img-top">
+      <h5 class="card-title text-secondary">{{service.icon_off |safe}}  {{service.service_name}}</h5>
+      </div>
+    </div>
+    <p class="card-text">{{ service.service_name }} Kapalı!</p>
+    <!-- <a href="{{ url_for('change_service_state', service_id=service.id) }}" class="btn-service-disable btn btn-primary d-grid gap-2"> Aç </a> -->
+    <a href="#" class="btn-service btn btn-success d-grid gap-2"> Aç </a>
+    {% endif %}
+  </div>
+</div>
+
