@@ -1,6 +1,6 @@
 #uploads
 *.wav
-/evotomasyon/static/uploads/
+
 
 # db
 *.db
